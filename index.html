@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre Medios y Tecnología</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Encabezado */
+        header {
+            background: linear-gradient(135deg, #007BFF, #0056b3);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        /* Navegación */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #222;
+            padding: 10px 0;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #007BFF;
+            border-radius: 5px;
+        }
+
+        /* Contenedor principal */
+        .container {
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* Secciones */
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+        }
+
+        .section h2 {
+            color: #007BFF;
+            font-size: 22px;
+        }
+
+        /* Formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            background: #007BFF;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        /* Pie de página */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        /* Adaptabilidad para móviles */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Bienvenidos a la Página de Información sobre Medios y Tecnología <br>
+        Cruz García Natalia <br>
+        Rodriguez Monterrosas Naomi <br>
+       
+    </header>
+    
+    <nav>
+        <a href="#prensa">Prensa</a>
+        <a href="#cine">Cine</a>
+        <a href="#radio">Radio</a>
+        <a href="#television">Televisión</a>
+        <a href="#redes">Redes de Computadoras</a>
+        <a href="#compresion">Compresión de Datos</a>
+        <a href="#formulario">Formulario</a>
+    </nav>
+    
+    <div class="container">
+
+        <section id="prensa" class="section">
+            <h2>Prensa</h2>
+            <p>La prensa se refiere a los medios escritos como periódicos y revistas, fundamentales para la difusión de información y el debate público.</p>
+        </section>
+
+        <section id="cine" class="section">
+            <h2>Cine</h2>
+            <p>El cine es un arte visual que utiliza imágenes en movimiento y sonido para contar historias y transmitir mensajes.</p>
+        </section>
+
+        <section id="radio" class="section">
+            <h2>Radio</h2>
+            <p>La radio transmite información y entretenimiento mediante ondas electromagnéticas.</p>
+        </section>
+
+        <section id="television" class="section">
+            <h2>Televisión</h2>
+            <p>La televisión ofrece una combinación de imágenes y sonido en tiempo real.</p>
+        </section>
+
+        <section id="redes" class="section">
+            <h2>Redes de Computadoras</h2>
+            <p>Las redes de computadoras permiten la comunicación entre dispositivos mediante tecnologías como Ethernet y Wi-Fi.</p>
+        </section>
+
+        <section id="compresion" class="section">
+            <h2>Compresión de Datos</h2>
+            <p>La compresión de datos reduce el tamaño de los archivos para optimizar su almacenamiento y transmisión.</p>
+        </section>
+
+        <section id="propiedades-imagen" class="section">
+            <h2>Propiedades de la Imagen Digital y Píxel</h2>
+            <p>Las principales propiedades incluyen resolución, profundidad de color y formato.</p>
+        </section>
+
+        <!-- FORMULARIO -->
+        <section id="formulario" class="section">
+            <h2>Formulario de Contacto</h2>
+
+            <form action="procesar.php" method="POST">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="Nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="Correo_electronico" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="Telefono" required>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="Comentarios" required></textarea>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+        <!-- FIN DEL FORMULARIO -->
+
+    </div>
+
+    <footer>
+        &copy; 2025 Información sobre Medios y Tecnología
+    </footer>
+
+</body>
+</html>
